@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-11T14:53:27.756312" rpa="false" schemaversion="5">
+<suite id="s1" name="TC012" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC012.robot">
+<test id="s1-t1" name="TC_012 Case in BDD Format" line="10">
+<kw name="Given">
+<msg time="2024-12-11T14:53:27.912294" level="FAIL">No keyword with name 'Given' found.</msg>
+<arg>Start Browser and Maximize</arg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<status status="FAIL" start="2024-12-11T14:53:27.912250" elapsed="0.000085">No keyword with name 'Given' found.</status>
+</kw>
+<kw name="When">
+<arg>Create Folder and Runtime</arg>
+<arg>ABCD</arg>
+<arg>XYZM</arg>
+<status status="NOT RUN" start="2024-12-11T14:53:27.912593" elapsed="0.000026"/>
+</kw>
+<kw name="Then">
+<arg>Concatenate Username and Password</arg>
+<arg>Testing</arg>
+<arg>World</arg>
+<status status="NOT RUN" start="2024-12-11T14:53:27.912776" elapsed="0.000018"/>
+</kw>
+<status status="FAIL" start="2024-12-11T14:53:27.910847" elapsed="0.002269">No keyword with name 'Given' found.</status>
+</test>
+<status status="FAIL" start="2024-12-11T14:53:27.757431" elapsed="0.156519"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC012">TC012</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-12-11T14:53:27.908139" level="WARN">Error in file 'C:\Users\niri\PycharmProjects\TestProject001\Resources\Resources1.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

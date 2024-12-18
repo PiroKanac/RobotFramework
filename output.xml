@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-11T15:23:33.697667" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases">
+<kw name="Before Each Test Suite" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:33.761317" level="INFO">Test Suite Started</msg>
+<arg>Test Suite Started</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:33.761167" elapsed="0.000196"/>
+</kw>
+<status status="PASS" start="2024-12-11T15:23:33.760831" elapsed="0.001189"/>
+</kw>
+<suite id="s1-s1" name="TC001" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC001.robot">
+<test id="s1-s1-t1" name="TC_001 Browser Start and Close" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:33.905595" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-11T15:23:33.905215" elapsed="1.737308"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-11T15:23:35.643725" elapsed="0.036539"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-12-11T15:23:35.680754" elapsed="0.021566"/>
+</kw>
+<kw name="Enter Username Password Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:35.703775" level="INFO">Typing text 'testing' into text field 'name:fld_username'.</msg>
+<arg>name:fld_username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-11T15:23:35.703396" elapsed="0.110616"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:35.815553" level="INFO">Typing text 'testingworldindia@gmail.com' into text field 'name:fld_email'.</msg>
+<arg>name:fld_email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-11T15:23:35.815300" elapsed="0.143847"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:35.960725" level="INFO">Typing text '123456' into text field 'name:fld_password'.</msg>
+<arg>name:fld_password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-11T15:23:35.960189" elapsed="0.077614"/>
+</kw>
+<arg>testing</arg>
+<arg>testingworldindia@gmail.com</arg>
+<arg>123456</arg>
+<status status="PASS" start="2024-12-11T15:23:35.702904" elapsed="0.335865"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:36.176251" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TestCases/TC001.png"&gt;&lt;img src="TestCases/TC001.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>C:/Users/niri/PycharmProjects/TestProject001/TestCases/TC001.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-11T15:23:36.039089" elapsed="0.137269"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-11T15:23:36.177497" elapsed="2.111737"/>
+</kw>
+<status status="PASS" start="2024-12-11T15:23:33.904329" elapsed="4.385703"/>
+</test>
+<status status="PASS" start="2024-12-11T15:23:33.762173" elapsed="4.530671"/>
+</suite>
+<suite id="s1-s2" name="TC002" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC002.robot">
+<test id="s1-s2-t1" name="TC_002 Variable Test" line="8">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-12-11T15:23:38.309539" level="INFO">@{List1} = [ Hello | 22 | 23.23 | World | Abcd1234 ]</msg>
+<var>@{List1}</var>
+<arg>Hello</arg>
+<arg>22</arg>
+<arg>23.23</arg>
+<arg>World</arg>
+<arg>Abcd1234</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.309369" elapsed="0.000195"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-12-11T15:23:38.310721" level="INFO">Length is 5.</msg>
+<msg time="2024-12-11T15:23:38.310796" level="INFO">${list_lenght} = 5</msg>
+<var>${list_lenght}</var>
+<arg>${List1}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.310576" elapsed="0.000239"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${list_lenght}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.311937" elapsed="0.000332"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2024-12-11T15:23:38.312682" level="INFO">${list_data} = World</msg>
+<var>${list_data}</var>
+<arg>${List1}</arg>
+<arg>3</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.312534" elapsed="0.000169"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${list_data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.313443" elapsed="0.000283"/>
+</kw>
+<status status="PASS" start="2024-12-11T15:23:38.308808" elapsed="0.005127"/>
+</test>
+<status status="PASS" start="2024-12-11T15:23:38.295165" elapsed="0.020411"/>
+</suite>
+<suite id="s1-s3" name="TC003" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC003.robot">
+<test id="s1-s3-t1" name="TC_003 For loop test" line="10">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-12-11T15:23:38.320630" level="INFO">@{List1} = [ Hello | 22 | 23.23 | World | Abcd1234 ]</msg>
+<var>@{List1}</var>
+<arg>Hello</arg>
+<arg>22</arg>
+<arg>23.23</arg>
+<arg>World</arg>
+<arg>Abcd1234</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.320446" elapsed="0.000222"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.322503" elapsed="0.000283"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-12-11T15:23:38.322214" elapsed="0.000694"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.323143" elapsed="0.000181"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-12-11T15:23:38.323056" elapsed="0.000362"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.323623" elapsed="0.000172"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-12-11T15:23:38.323546" elapsed="0.000338"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.324074" elapsed="0.000202"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-12-11T15:23:38.323999" elapsed="0.000367"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.324545" elapsed="0.000179"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2024-12-11T15:23:38.324476" elapsed="0.000333"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.324986" elapsed="0.000158"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2024-12-11T15:23:38.324918" elapsed="0.000430"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.325582" elapsed="0.000194"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2024-12-11T15:23:38.325486" elapsed="0.000391"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.326080" elapsed="0.000176"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2024-12-11T15:23:38.326001" elapsed="0.000368"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.326558" elapsed="0.000179"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2024-12-11T15:23:38.326485" elapsed="0.000351"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>10</value>
+<status status="PASS" start="2024-12-11T15:23:38.321676" elapsed="0.005249"/>
+</for>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.327309" elapsed="0.000303"/>
+</kw>
+<var name="${i}">Hello</var>
+<status status="PASS" start="2024-12-11T15:23:38.327224" elapsed="0.000486"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.327912" elapsed="0.000180"/>
+</kw>
+<var name="${i}">22</var>
+<status status="PASS" start="2024-12-11T15:23:38.327838" elapsed="0.000356"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.328389" elapsed="0.000195"/>
+</kw>
+<var name="${i}">23.23</var>
+<status status="PASS" start="2024-12-11T15:23:38.328311" elapsed="0.000384"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.328901" elapsed="0.000188"/>
+</kw>
+<var name="${i}">World</var>
+<status status="PASS" start="2024-12-11T15:23:38.328827" elapsed="0.000358"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.329382" elapsed="0.000191"/>
+</kw>
+<var name="${i}">Abcd1234</var>
+<status status="PASS" start="2024-12-11T15:23:38.329302" elapsed="0.000358"/>
+</iter>
+<var>${i}</var>
+<value>@{List1}</value>
+<status status="PASS" start="2024-12-11T15:23:38.327104" elapsed="0.002641"/>
+</for>
+<status status="PASS" start="2024-12-11T15:23:38.319962" elapsed="0.009988"/>
+</test>
+<status status="PASS" start="2024-12-11T15:23:38.317115" elapsed="0.014155"/>
+</suite>
+<suite id="s1-s4" name="TC004" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC004.robot">
+<test id="s1-s4-t1" name="TC_004 Conditionaly Run Keywords" line="10">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-11T15:23:38.336003" level="INFO">${var} = YES</msg>
+<var>${var}</var>
+<arg>YES</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.335883" elapsed="0.000144"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Value Found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.337215" elapsed="0.000342"/>
+</kw>
+<arg>'${var}'=='YES'</arg>
+<arg>log to console</arg>
+<arg>Value Found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.336948" elapsed="0.000741"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${var}'=='NO'</arg>
+<arg>log to console</arg>
+<arg>Value Not Found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.337973" elapsed="0.000143"/>
+</kw>
+<status status="PASS" start="2024-12-11T15:23:38.335580" elapsed="0.002758"/>
+</test>
+<status status="PASS" start="2024-12-11T15:23:38.333060" elapsed="0.006617"/>
+</suite>
+<suite id="s1-s5" name="TC005" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC005.robot">
+<test id="s1-s5-t1" name="TC_005 Handle Multiple Tabs" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:38.343397" level="INFO">Opening browser 'Chrome' to base url 'http://robotframework.org'.</msg>
+<arg>${var1}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-11T15:23:38.343244" elapsed="2.694486"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-11T15:23:41.038968" elapsed="0.032047"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:41.072777" level="INFO">Clicking element '//a[text()='robotframework.org/rpa']'.</msg>
+<msg time="2024-12-11T15:23:41.190154" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-11T15:23:41.190431" level="FAIL">Element with locator '//a[text()='robotframework.org/rpa']' not found.</msg>
+<arg>//a[text()='robotframework.org/rpa']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-12-11T15:23:41.072179" elapsed="0.200039">Element with locator '//a[text()='robotframework.org/rpa']' not found.</status>
+</kw>
+<status status="FAIL" start="2024-12-11T15:23:38.342959" elapsed="2.930363">Element with locator '//a[text()='robotframework.org/rpa']' not found.</status>
+</test>
+<status status="FAIL" start="2024-12-11T15:23:38.340773" elapsed="2.935483"/>
+</suite>
+<suite id="s1-s6" name="TC006" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC006.robot">
+<test id="s1-s6-t1" name="TC_006 Define Keywords and Arguments" line="11">
+<kw name="Start Browser and Maximize" owner="Resources1">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:41.287524" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-11T15:23:41.287310" elapsed="1.685572"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-11T15:23:42.973903" elapsed="0.041275"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>This Keyword is for Start Browser and Maximize its Window, Get and Return title value</doc>
+<status status="PASS" start="2024-12-11T15:23:41.286942" elapsed="1.728482"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:43.016133" level="INFO">Typing text 'HelloWorld' into text field 'name:fld_username'.</msg>
+<arg>name:fld_username</arg>
+<arg>HelloWorld</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-11T15:23:43.015865" elapsed="0.136483"/>
+</kw>
+<status status="PASS" start="2024-12-11T15:23:41.286220" elapsed="1.867206"/>
+</test>
+<status status="PASS" start="2024-12-11T15:23:41.278313" elapsed="1.876795"/>
+</suite>
+<suite id="s1-s7" name="TC007" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC007.robot">
+<test id="s1-s7-t1" name="TC_007 Define Keywords and Arguments &amp; Return Value" line="10">
+<kw name="Start Browser and Maximize" owner="Resources1">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:43.161690" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-11T15:23:43.161514" elapsed="1.637309"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-11T15:23:44.800431" elapsed="0.032972"/>
+</kw>
+<msg time="2024-12-11T15:23:44.833804" level="INFO">${Res} = None</msg>
+<var>${Res}</var>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>This Keyword is for Start Browser and Maximize its Window, Get and Return title value</doc>
+<status status="PASS" start="2024-12-11T15:23:43.161216" elapsed="1.672633"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:44.835721" level="INFO">None</msg>
+<arg>${Res}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:44.835460" elapsed="0.000315"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:44.837086" level="INFO">Typing text 'None' into text field 'name:fld_username'.</msg>
+<arg>name:fld_username</arg>
+<arg>${Res}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-11T15:23:44.836711" elapsed="0.112686"/>
+</kw>
+<doc>This Test Case is for using Arguments from Resources and using it in the test case and also to get title and return its value to input field</doc>
+<status status="PASS" start="2024-12-11T15:23:43.160567" elapsed="1.790442"/>
+</test>
+<status status="PASS" start="2024-12-11T15:23:43.156746" elapsed="1.796109"/>
+</suite>
+<suite id="s1-s8" name="TC008" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC008.robot">
+<kw name="Before Each Test Suite" owner="Resources1" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:44.960325" level="INFO">Before Each Test Suite</msg>
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:44.960205" elapsed="0.000165"/>
+</kw>
+<status status="PASS" start="2024-12-11T15:23:44.959976" elapsed="0.001511"/>
+</kw>
+<test id="s1-s8-t1" name="TC_008_1 Setup &amp; Tear Down First Test Case" line="14">
+<kw name="Start Browser and Maximize" owner="Resources1" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:44.962790" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-11T15:23:44.962614" elapsed="1.654603"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-11T15:23:46.618285" elapsed="0.026140"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>This Keyword is for Start Browser and Maximize its Window, Get and Return title value</doc>
+<status status="PASS" start="2024-12-11T15:23:44.962300" elapsed="1.682426"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:46.645843" level="INFO">Typing text 'Testing' into text field 'name:fld_username'.</msg>
+<arg>name:fld_username</arg>
+<arg>Testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-11T15:23:46.645323" elapsed="0.114277"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:46.761445" level="INFO">Typing text 'testingworldindia@gmail.com' into text field 'name:fld_email'.</msg>
+<arg>name:fld_email</arg>
+<arg>testingworldindia@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-11T15:23:46.761194" elapsed="0.145029"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:46.908207" level="INFO">Typing text '123456' into text field 'name:fld_password'.</msg>
+<arg>name:fld_password</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-11T15:23:46.907887" elapsed="0.082770"/>
+</kw>
+<kw name="Close Browser Window" owner="Resources1" type="TEARDOWN">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:47.001937" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-12-11T15:23:46.997668" elapsed="0.004328"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:47.003217" level="INFO">Login &amp; Sign Up Forms</msg>
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:47.002996" elapsed="0.000314"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-11T15:23:47.004156" elapsed="2.107254"/>
+</kw>
+<return>
+<value>${Title}</value>
+<status status="PASS" start="2024-12-11T15:23:49.111759" elapsed="0.000127"/>
+</return>
+<status status="PASS" start="2024-12-11T15:23:46.996985" elapsed="2.115318"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-12-11T15:23:44.961697" elapsed="4.151414"/>
+</test>
+<test id="s1-s8-t2" name="TC_008_2 Setup &amp; Tear Down Second Test Case" line="20">
+<kw name="Start Browser and Maximize" owner="Resources1" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:49.122462" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<arg>${UserURL}</arg>
+<arg>${InputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-11T15:23:49.121979" elapsed="2.355444"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-11T15:23:51.478836" elapsed="0.040355"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>This Keyword is for Start Browser and Maximize its Window, Get and Return title value</doc>
+<status status="PASS" start="2024-12-11T15:23:49.121150" elapsed="2.398421"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:51.520339" level="INFO">Selecting 'office' from radio button 'add_type'.</msg>
+<arg>add_type</arg>
+<arg>office</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2024-12-11T15:23:51.520107" elapsed="0.089792"/>
+</kw>
+<kw name="Close Browser Window" owner="Resources1" type="TEARDOWN">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:51.617470" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-12-11T15:23:51.612260" elapsed="0.005275"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:51.618921" level="INFO">Login &amp; Sign Up Forms</msg>
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:51.618604" elapsed="0.000414"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-11T15:23:51.620316" elapsed="2.127957"/>
+</kw>
+<return>
+<value>${Title}</value>
+<status status="PASS" start="2024-12-11T15:23:53.748742" elapsed="0.000203"/>
+</return>
+<status status="PASS" start="2024-12-11T15:23:51.611626" elapsed="2.137827"/>
+</kw>
+<tag>Sanity</tag>
+<status status="PASS" start="2024-12-11T15:23:49.119928" elapsed="4.630131"/>
+</test>
+<kw name="After Each Test Suite" owner="Resources1" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:53.760249" level="INFO">After Each Test Suite</msg>
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:53.759967" elapsed="0.000372"/>
+</kw>
+<status status="PASS" start="2024-12-11T15:23:53.759454" elapsed="0.002161"/>
+</kw>
+<status status="PASS" start="2024-12-11T15:23:44.955236" elapsed="8.806618"/>
+</suite>
+<suite id="s1-s9" name="TC009" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC009.robot">
+<test id="s1-s9-t1" name="TC_009 Robot Fetch Data" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:53.770889" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-11T15:23:53.770585" elapsed="1.601771"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-11T15:23:55.374237" elapsed="0.029189"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:55.410294" level="INFO">${ActualURL} = https://www.thetestingworld.com/testings/</msg>
+<var>${ActualURL}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-12-11T15:23:55.403949" elapsed="0.006413"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:55.412514" level="INFO">https://www.thetestingworld.com/testings/</msg>
+<arg>${ActualURL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:55.412233" elapsed="0.000335"/>
+</kw>
+<kw name="Get Source" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:55.420699" level="INFO">${PageHTML} = &lt;html lang="en" class="no-js"&gt;&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt; 
+    &lt;meta name="viewport" content="width=device-width, initial-scale...</msg>
+<var>${PageHTML}</var>
+<doc>Returns the entire HTML source of the current page or frame.</doc>
+<status status="PASS" start="2024-12-11T15:23:55.413717" elapsed="0.007089"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:55.422400" level="INFO">&lt;html lang="en" class="no-js"&gt;&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt; 
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+    &lt;title&gt; Login &amp;amp; Sign Up Forms&lt;/title&gt;
+    &lt;meta name="author" content="Reverie Tech"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="css/demo.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="tabs.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;style&gt;
+#overlay {
+ display:none; /*hidden on pageload*/
+ position:fixed; /*this will disable it from scrolling*/
+ width:100%; /*this will give the full width*/
+ height:100%; /*this will give the full height*/
+ z-index:999; /*this will keep it above all elements in the page*/
+ left:0; /*this will align it to the left*/
+ top:0; /*this will align it to the top*/
+ background:#000; /*this will give it a black background*/
+}
+
+.popup {
+ display:none; /*hidden on pageload*/
+ width:50%; /*width of popup*/
+ height:400px;  /*height of popup*/
+ padding:10px; /*padding for popup*/
+ background:#fff; /*background of popup*/
+ border:5px solid #ccc; /*border of popup*/
+ position:fixed; /*this will keep it relative to the body*/
+ z-index:9999; /*this will keep it above the overlay*/
+ top:10%; /*keep popup in center*/
+ left:25%; /*keep popup in center*/
+ color:#000000;
+
+}
+.popup .close { /* close link*/
+ float:right;
+ color:#000;
+ text-decoration:none;/*remove underline from the close link*/
+}
+.popup p { /*popup text*/
+ padding:10px 0; color:#333333; font-size:18px;
+}
+&lt;/style&gt;
+
+&lt;div id="overlay"&gt;&lt;/div&gt;
+
+&lt;div class="popup" id="popup1"&gt;
+&lt;a href="#" class="close"&gt;X&lt;/a&gt;
+&lt;p&gt;
+&lt;/p&gt;&lt;h2&gt;Terms and Conditions&lt;/h2&gt;&lt;br&gt;
+&lt;br&gt;
+
+It’s up to you to set the rules and guidelines that the user must agree to. You can think of your Terms and Conditions agreement as the legal agreement where you maintain your rights to exclude users from your app in the event that they abuse your app, and where you maintain your legal rights against potential app abusers, and so on.&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+Terms and Conditions are also known as Terms of Service or Terms of Use.&lt;br&gt;
+&lt;br&gt;
+
+This type of legal agreement can be used for both your website and your mobile app. It’s not required (it’s not recommended actually) to have separate Terms and Conditions agreements: one for your website and one for your mobile app.
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+&lt;header&gt;
+	&lt;h1&gt;&lt;img src="images/logo.png" style=" width:400px;"&gt;&lt;span&gt;Login or Sign Up to start&lt;/span&gt; &lt;hr&gt;&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;div class="container"&gt;
+&lt;!--    &lt;div class="democolors"&gt;
+        &lt;a class="blue" href="index.html"&gt;blue&lt;/a&gt;
+        &lt;a class="red" href="red.html"&gt;red&lt;/a&gt;
+        &lt;a class="purple" href="purple.html"&gt;purple&lt;/a&gt;
+    &lt;/div&gt;--&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.left{ float:left; width:30%; text-align:center;}
+.right{ float:right; width:30%; text-align:center;}
+.center{ float:left; width:40%;}
+
+@media only screen and (max-width: 767px) {
+ .left{ float:left; width:100%; text-align:center;}
+.right{ float:right; width:100%; text-align:center;     padding-top: 44px;}
+.center{ float:left; width:100%; text-align:center;}
+
+.left img, .right img{ width:100%;}
+
+}
+
+&lt;/style&gt;
+
+&lt;div class="container" style="width:90%;"&gt;
+	 &lt;div class="left"&gt;
+	      &lt;a href="https://t.me/joinchat/GgRlDbOsbSzkJElL" target="_blank"&gt;
+     &lt;img src="banner/64625f639e847.png"&gt;
+	 
+	      &lt;/a&gt;&lt;a href="https://www.facebook.com/groups/461729974772386/?ref=nf_target&amp;amp;hc_ref=ARSCrv_mrMgSSDWqT4b8kx3RpnWSI6K9uEhVNH-HHMESWvrSmtpqCg2IXKIcVMNXau8&amp;amp;fref=gs&amp;amp;dti=461729974772386&amp;amp;hc_location=group" target="_blank"&gt;
+     &lt;img src="banner/5e13707d13dbc.jpg"&gt;
+	 
+	      &lt;/a&gt;&lt;a href="https://www.youtube.com/channel/UCsdoSHH5bucBf_wwtvWJfnQ/playlists" target="_blank"&gt;
+     &lt;img src="banner/5e13707d13e74.jpg"&gt;
+	 
+	      &lt;/a&gt;&lt;a href="" target="_blank"&gt;
+     &lt;img src="banner/5c33a68c8a087.jpg"&gt;
+	 
+	      &lt;/a&gt;
+     &lt;/div&gt;
+    &lt;section class="tabblue center"&gt;
+		&lt;ul class="tabs blue"&gt;
+          &lt;li&gt;
+            &lt;input type="radio" name="tabs blue" id="tab1" checked=""&gt;
+            &lt;label for="tab1"&gt;Register&lt;/label&gt;
+            &lt;div id="tab-content1" class="tab-content"&gt;
+              &lt;p&gt;Register now and kick start your career as a Software Testing Pro!&lt;/p&gt;
+              
+             
+
+                                       
+                   
+                  
+                    
+                  
+                    
+               &lt;br&gt;
+              &lt;form method="post" name="register" action="#"&gt;
+              &lt;input name="_hiddenTXT" type="hidden" value="1"&gt;
+              
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-user fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="fld_username" required="" type="text" placeholder="myusername" value=""&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-envelope fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="fld_email" required="" type="email" placeholder="myusername@gmail.com" value=""&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-lock fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="fld_password" required="" type="password" placeholder="Password" value=""&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-lock fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="fld_cpassword" required="" type="password" placeholder="Confirm password" value=""&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-calendar-o fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input type="text" id="datepicker" name="dob" placeholder="Date of birth" value="" class="hasDatepicker"&gt;
+                
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-phone fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input type="text" placeholder="Phone" name="phone" value=""&gt;
+                
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-map fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input type="text" placeholder="Address" name="address" value=""&gt;
+                
+                Address type : &lt;input style="position:inherit;" name="add_type" type="radio" value="home"&gt;Home 
+                &lt;input style="position:inherit;" name="add_type" type="radio" value="office"&gt;Office
+                
+                &lt;select name="sex" required=""&gt;
+                  &lt;option value=""&gt;Choose Gender&lt;/option&gt;
+                  &lt;option value="1"&gt;Male&lt;/option&gt;
+                  &lt;option value="2"&gt;Female&lt;/option&gt;
+                &lt;/select&gt;
+
+                
+&lt;select name="country" class="last countries " id="countryId"&gt;
+    &lt;option value=""&gt;Select Country&lt;/option&gt;
+&lt;option value="1"&gt;Afghanistan&lt;/option&gt;&lt;option value="2"&gt;Albania&lt;/option&gt;&lt;option value="3"&gt;Algeria&lt;/option&gt;&lt;option value="4"&gt;American Samoa&lt;/option&gt;&lt;option value="5"&gt;Andorra&lt;/option&gt;&lt;option value="6"&gt;Angola&lt;/option&gt;&lt;option value="7"&gt;Anguilla&lt;/option&gt;&lt;option value="8"&gt;Antarctica&lt;/option&gt;&lt;option value="9"&gt;Antigua And Barbuda&lt;/option&gt;&lt;option value="10"&gt;Argentina&lt;/option&gt;&lt;option value="11"&gt;Armenia&lt;/option&gt;&lt;option value="12"&gt;Aruba&lt;/option&gt;&lt;option value="13"&gt;Australia&lt;/option&gt;&lt;option value="14"&gt;Austria&lt;/option&gt;&lt;option value="15"&gt;Azerbaijan&lt;/option&gt;&lt;option value="16"&gt;Bahamas The&lt;/option&gt;&lt;option value="17"&gt;Bahrain&lt;/option&gt;&lt;option value="18"&gt;Bangladesh&lt;/option&gt;&lt;option value="19"&gt;Barbados&lt;/option&gt;&lt;option value="20"&gt;Belarus&lt;/option&gt;&lt;option value="21"&gt;Belgium&lt;/option&gt;&lt;option value="22"&gt;Belize&lt;/option&gt;&lt;option value="23"&gt;Benin&lt;/option&gt;&lt;option value="24"&gt;Bermuda&lt;/option&gt;&lt;option value="25"&gt;Bhutan&lt;/option&gt;&lt;option value="26"&gt;Bolivia&lt;/option&gt;&lt;option value="27"&gt;Bosnia and Herzegovina&lt;/option&gt;&lt;option value="28"&gt;Botswana&lt;/option&gt;&lt;option value="29"&gt;Bouvet Island&lt;/option&gt;&lt;option value="30"&gt;Brazil&lt;/option&gt;&lt;option value="31"&gt;British Indian Ocean Territory&lt;/option&gt;&lt;option value="32"&gt;Brunei&lt;/option&gt;&lt;option value="33"&gt;Bulgaria&lt;/option&gt;&lt;option value="34"&gt;Burkina Faso&lt;/option&gt;&lt;option value="35"&gt;Burundi&lt;/option&gt;&lt;option value="36"&gt;Cambodia&lt;/option&gt;&lt;option value="37"&gt;Cameroon&lt;/option&gt;&lt;option value="38"&gt;Canada&lt;/option&gt;&lt;option value="39"&gt;Cape Verde&lt;/option&gt;&lt;option value="40"&gt;Cayman Islands&lt;/option&gt;&lt;option value="41"&gt;Central African Republic&lt;/option&gt;&lt;option value="42"&gt;Chad&lt;/option&gt;&lt;option value="43"&gt;Chile&lt;/option&gt;&lt;option value="44"&gt;China&lt;/option&gt;&lt;option value="45"&gt;Christmas Island&lt;/option&gt;&lt;option value="46"&gt;Cocos (Keeling) Islands&lt;/option&gt;&lt;option value="47"&gt;Colombia&lt;/option&gt;&lt;option value="48"&gt;Comoros&lt;/option&gt;&lt;option value="49"&gt;Congo&lt;/option&gt;&lt;option value="50"&gt;Congo The Democratic Republic Of The&lt;/option&gt;&lt;option value="51"&gt;Cook Islands&lt;/option&gt;&lt;option value="52"&gt;Costa Rica&lt;/option&gt;&lt;option value="53"&gt;Cote D'Ivoire (Ivory Coast)&lt;/option&gt;&lt;option value="54"&gt;Croatia (Hrvatska)&lt;/option&gt;&lt;option value="55"&gt;Cuba&lt;/option&gt;&lt;option value="56"&gt;Cyprus&lt;/option&gt;&lt;option value="57"&gt;Czech Republic&lt;/option&gt;&lt;option value="58"&gt;Denmark&lt;/option&gt;&lt;option value="59"&gt;Djibouti&lt;/option&gt;&lt;option value="60"&gt;Dominica&lt;/option&gt;&lt;option value="61"&gt;Dominican Republic&lt;/option&gt;&lt;option value="62"&gt;East Timor&lt;/option&gt;&lt;option value="63"&gt;Ecuador&lt;/option&gt;&lt;option value="64"&gt;Egypt&lt;/option&gt;&lt;option value="65"&gt;El Salvador&lt;/option&gt;&lt;option value="66"&gt;Equatorial Guinea&lt;/option&gt;&lt;option value="67"&gt;Eritrea&lt;/option&gt;&lt;option value="68"&gt;Estonia&lt;/option&gt;&lt;option value="69"&gt;Ethiopia&lt;/option&gt;&lt;option value="70"&gt;External Territories of Australia&lt;/option&gt;&lt;option value="71"&gt;Falkland Islands&lt;/option&gt;&lt;option value="72"&gt;Faroe Islands&lt;/option&gt;&lt;option value="73"&gt;Fiji Islands&lt;/option&gt;&lt;option value="74"&gt;Finland&lt;/option&gt;&lt;option value="75"&gt;France&lt;/option&gt;&lt;option value="76"&gt;French Guiana&lt;/option&gt;&lt;option value="77"&gt;French Polynesia&lt;/option&gt;&lt;option value="78"&gt;French Southern Territories&lt;/option&gt;&lt;option value="79"&gt;Gabon&lt;/option&gt;&lt;option value="80"&gt;Gambia The&lt;/option&gt;&lt;option value="81"&gt;Georgia&lt;/option&gt;&lt;option value="82"&gt;Germany&lt;/option&gt;&lt;option value="83"&gt;Ghana&lt;/option&gt;&lt;option value="84"&gt;Gibraltar&lt;/option&gt;&lt;option value="85"&gt;Greece&lt;/option&gt;&lt;option value="86"&gt;Greenland&lt;/option&gt;&lt;option value="87"&gt;Grenada&lt;/option&gt;&lt;option value="88"&gt;Guadeloupe&lt;/option&gt;&lt;option value="89"&gt;Guam&lt;/option&gt;&lt;option value="90"&gt;Guatemala&lt;/option&gt;&lt;option value="91"&gt;Guernsey and Alderney&lt;/option&gt;&lt;option value="92"&gt;Guinea&lt;/option&gt;&lt;option value="93"&gt;Guinea-Bissau&lt;/option&gt;&lt;option value="94"&gt;Guyana&lt;/option&gt;&lt;option value="95"&gt;Haiti&lt;/option&gt;&lt;option value="96"&gt;Heard and McDonald Islands&lt;/option&gt;&lt;option value="97"&gt;Honduras&lt;/option&gt;&lt;option value="98"&gt;Hong Kong S.A.R.&lt;/option&gt;&lt;option value="99"&gt;Hungary&lt;/option&gt;&lt;option value="100"&gt;Iceland&lt;/option&gt;&lt;option value="101"&gt;India&lt;/option&gt;&lt;option value="102"&gt;Indonesia&lt;/option&gt;&lt;option value="103"&gt;Iran&lt;/option&gt;&lt;option value="104"&gt;Iraq&lt;/option&gt;&lt;option value="105"&gt;Ireland&lt;/option&gt;&lt;option value="106"&gt;Israel&lt;/option&gt;&lt;option value="107"&gt;Italy&lt;/option&gt;&lt;option value="108"&gt;Jamaica&lt;/option&gt;&lt;option value="109"&gt;Japan&lt;/option&gt;&lt;option value="110"&gt;Jersey&lt;/option&gt;&lt;option value="111"&gt;Jordan&lt;/option&gt;&lt;option value="112"&gt;Kazakhstan&lt;/option&gt;&lt;option value="113"&gt;Kenya&lt;/option&gt;&lt;option value="114"&gt;Kiribati&lt;/option&gt;&lt;option value="115"&gt;Korea North&lt;/option&gt;&lt;option value="116"&gt;Korea South&lt;/option&gt;&lt;option value="117"&gt;Kuwait&lt;/option&gt;&lt;option value="118"&gt;Kyrgyzstan&lt;/option&gt;&lt;option value="119"&gt;Laos&lt;/option&gt;&lt;option value="120"&gt;Latvia&lt;/option&gt;&lt;option value="121"&gt;Lebanon&lt;/option&gt;&lt;option value="122"&gt;Lesotho&lt;/option&gt;&lt;option value="123"&gt;Liberia&lt;/option&gt;&lt;option value="124"&gt;Libya&lt;/option&gt;&lt;option value="125"&gt;Liechtenstein&lt;/option&gt;&lt;option value="126"&gt;Lithuania&lt;/option&gt;&lt;option value="127"&gt;Luxembourg&lt;/option&gt;&lt;option value="128"&gt;Macau S.A.R.&lt;/option&gt;&lt;option value="129"&gt;Macedonia&lt;/option&gt;&lt;option value="130"&gt;Madagascar&lt;/option&gt;&lt;option value="131"&gt;Malawi&lt;/option&gt;&lt;option value="132"&gt;Malaysia&lt;/option&gt;&lt;option value="133"&gt;Maldives&lt;/option&gt;&lt;option value="134"&gt;Mali&lt;/option&gt;&lt;option value="135"&gt;Malta&lt;/option&gt;&lt;option value="136"&gt;Man (Isle of)&lt;/option&gt;&lt;option value="137"&gt;Marshall Islands&lt;/option&gt;&lt;option value="138"&gt;Martinique&lt;/option&gt;&lt;option value="139"&gt;Mauritania&lt;/option&gt;&lt;option value="140"&gt;Mauritius&lt;/option&gt;&lt;option value="141"&gt;Mayotte&lt;/option&gt;&lt;option value="142"&gt;Mexico&lt;/option&gt;&lt;option value="143"&gt;Micronesia&lt;/option&gt;&lt;option value="144"&gt;Moldova&lt;/option&gt;&lt;option value="145"&gt;Monaco&lt;/option&gt;&lt;option value="146"&gt;Mongolia&lt;/option&gt;&lt;option value="147"&gt;Montserrat&lt;/option&gt;&lt;option value="148"&gt;Morocco&lt;/option&gt;&lt;option value="149"&gt;Mozambique&lt;/option&gt;&lt;option value="150"&gt;Myanmar&lt;/option&gt;&lt;option value="151"&gt;Namibia&lt;/option&gt;&lt;option value="152"&gt;Nauru&lt;/option&gt;&lt;option value="153"&gt;Nepal&lt;/option&gt;&lt;option value="154"&gt;Netherlands Antilles&lt;/option&gt;&lt;option value="155"&gt;Netherlands The&lt;/option&gt;&lt;option value="156"&gt;New Caledonia&lt;/option&gt;&lt;option value="157"&gt;New Zealand&lt;/option&gt;&lt;option value="158"&gt;Nicaragua&lt;/option&gt;&lt;option value="159"&gt;Niger&lt;/option&gt;&lt;option value="160"&gt;Nigeria&lt;/option&gt;&lt;option value="161"&gt;Niue&lt;/option&gt;&lt;option value="162"&gt;Norfolk Island&lt;/option&gt;&lt;option value="163"&gt;Northern Mariana Islands&lt;/option&gt;&lt;option value="164"&gt;Norway&lt;/option&gt;&lt;option value="165"&gt;Oman&lt;/option&gt;&lt;option value="166"&gt;Pakistan&lt;/option&gt;&lt;option value="167"&gt;Palau&lt;/option&gt;&lt;option value="168"&gt;Palestinian Territory Occupied&lt;/option&gt;&lt;option value="169"&gt;Panama&lt;/option&gt;&lt;option value="170"&gt;Papua new Guinea&lt;/option&gt;&lt;option value="171"&gt;Paraguay&lt;/option&gt;&lt;option value="172"&gt;Peru&lt;/option&gt;&lt;option value="173"&gt;Philippines&lt;/option&gt;&lt;option value="174"&gt;Pitcairn Island&lt;/option&gt;&lt;option value="175"&gt;Poland&lt;/option&gt;&lt;option value="176"&gt;Portugal&lt;/option&gt;&lt;option value="177"&gt;Puerto Rico&lt;/option&gt;&lt;option value="178"&gt;Qatar&lt;/option&gt;&lt;option value="179"&gt;Reunion&lt;/option&gt;&lt;option value="180"&gt;Romania&lt;/option&gt;&lt;option value="181"&gt;Russia&lt;/option&gt;&lt;option value="182"&gt;Rwanda&lt;/option&gt;&lt;option value="183"&gt;Saint Helena&lt;/option&gt;&lt;option value="184"&gt;Saint Kitts And Nevis&lt;/option&gt;&lt;option value="185"&gt;Saint Lucia&lt;/option&gt;&lt;option value="186"&gt;Saint Pierre and Miquelon&lt;/option&gt;&lt;option value="187"&gt;Saint Vincent And The Grenadines&lt;/option&gt;&lt;option value="188"&gt;Samoa&lt;/option&gt;&lt;option value="189"&gt;San Marino&lt;/option&gt;&lt;option value="190"&gt;Sao Tome and Principe&lt;/option&gt;&lt;option value="191"&gt;Saudi Arabia&lt;/option&gt;&lt;option value="192"&gt;Senegal&lt;/option&gt;&lt;option value="193"&gt;Serbia&lt;/option&gt;&lt;option value="194"&gt;Seychelles&lt;/option&gt;&lt;option value="195"&gt;Sierra Leone&lt;/option&gt;&lt;option value="196"&gt;Singapore&lt;/option&gt;&lt;option value="197"&gt;Slovakia&lt;/option&gt;&lt;option value="198"&gt;Slovenia&lt;/option&gt;&lt;option value="199"&gt;Smaller Territories of the UK&lt;/option&gt;&lt;option value="200"&gt;Solomon Islands&lt;/option&gt;&lt;option value="201"&gt;Somalia&lt;/option&gt;&lt;option value="202"&gt;South Africa&lt;/option&gt;&lt;option value="203"&gt;South Georgia&lt;/option&gt;&lt;option value="204"&gt;South Sudan&lt;/option&gt;&lt;option value="205"&gt;Spain&lt;/option&gt;&lt;option value="206"&gt;Sri Lanka&lt;/option&gt;&lt;option value="207"&gt;Sudan&lt;/option&gt;&lt;option value="208"&gt;Suriname&lt;/option&gt;&lt;option value="209"&gt;Svalbard And Jan Mayen Islands&lt;/option&gt;&lt;option value="210"&gt;Swaziland&lt;/option&gt;&lt;option value="211"&gt;Sweden&lt;/option&gt;&lt;option value="212"&gt;Switzerland&lt;/option&gt;&lt;option value="213"&gt;Syria&lt;/option&gt;&lt;option value="214"&gt;Taiwan&lt;/option&gt;&lt;option value="215"&gt;Tajikistan&lt;/option&gt;&lt;option value="216"&gt;Tanzania&lt;/option&gt;&lt;option value="217"&gt;Thailand&lt;/option&gt;&lt;option value="218"&gt;Togo&lt;/option&gt;&lt;option value="219"&gt;Tokelau&lt;/option&gt;&lt;option value="220"&gt;Tonga&lt;/option&gt;&lt;option value="221"&gt;Trinidad And Tobago&lt;/option&gt;&lt;option value="222"&gt;Tunisia&lt;/option&gt;&lt;option value="223"&gt;Turkey&lt;/option&gt;&lt;option value="224"&gt;Turkmenistan&lt;/option&gt;&lt;option value="225"&gt;Turks And Caicos Islands&lt;/option&gt;&lt;option value="226"&gt;Tuvalu&lt;/option&gt;&lt;option value="227"&gt;Uganda&lt;/option&gt;&lt;option value="228"&gt;Ukraine&lt;/option&gt;&lt;option value="229"&gt;United Arab Emirates&lt;/option&gt;&lt;option value="230"&gt;United Kingdom&lt;/option&gt;&lt;option value="231"&gt;United States&lt;/option&gt;&lt;option value="232"&gt;United States Minor Outlying Islands&lt;/option&gt;&lt;option value="233"&gt;Uruguay&lt;/option&gt;&lt;option value="234"&gt;Uzbekistan&lt;/option&gt;&lt;option value="235"&gt;Vanuatu&lt;/option&gt;&lt;option value="236"&gt;Vatican City State (Holy See)&lt;/option&gt;&lt;option value="237"&gt;Venezuela&lt;/option&gt;&lt;option value="238"&gt;Vietnam&lt;/option&gt;&lt;option value="239"&gt;Virgin Islands (British)&lt;/option&gt;&lt;option value="240"&gt;Virgin Islands (US)&lt;/option&gt;&lt;option value="241"&gt;Wallis And Futuna Islands&lt;/option&gt;&lt;option value="242"&gt;Western Sahara&lt;/option&gt;&lt;option value="243"&gt;Yemen&lt;/option&gt;&lt;option value="244"&gt;Yugoslavia&lt;/option&gt;&lt;option value="245"&gt;Zambia&lt;/option&gt;&lt;option value="246"&gt;Zimbabwe&lt;/option&gt;&lt;/select&gt;
+&lt;select name="state" class="states" id="stateId"&gt;
+     &lt;option value=""&gt;Select State&lt;/option&gt;
+&lt;/select&gt;
+&lt;select name="city" class="last cities" id="cityId"&gt;
+   &lt;option value=""&gt;Select City&lt;/option&gt;
+&lt;/select&gt;
+
+ &lt;span class="tabaddon"&gt;&lt;i class="fa fa-map fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+ &lt;input type="text" placeholder="Zip code" name="zip"&gt;     
+                
+                &lt;div class="btn"&gt;
+                  &lt;input type="checkbox" name="terms" required=""&gt;
+                  &lt;em&gt;I agree with terms and conditions &lt;a href="#" style=" color:#fff;font-size: 21px;" class="displayPopup"&gt;Read Detail&lt;/a&gt; &lt;/em&gt;
+                  &lt;input type="submit" value="Sign up"&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+      	  &lt;li&gt;
+            &lt;input type="radio" name="tabs blue" id="tab2"&gt;
+            &lt;label for="tab2"&gt;Login&lt;/label&gt;
+            &lt;div id="tab-content2" class="tab-content"&gt;
+              &lt;form method="post" name="register" action=""&gt;
+               &lt;input name="_hidCheckSubmit" type="hidden" value="2"&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-envelope fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="_txtUserName" required="" type="text" placeholder="Username" value=""&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-lock fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="_txtPassword" required="" type="password" placeholder="mypassword" value=""&gt;
+                &lt;div class="btn"&gt;
+                  &lt;input type="checkbox" name="terms"&gt;
+                  &lt;em&gt;Keep me logged in &lt;/em&gt;
+                  &lt;input type="submit" value="Login"&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          	
+          
+          
+          
+          
+        
+	&lt;/ul&gt;
+	&lt;/section&gt;
+    
+  &lt;div class="right"&gt;
+    &lt;a href="https://www.facebook.com/groups/1319017341783803" target="_blank"&gt;
+  &lt;img src="banner/64625f639e96b.png"&gt;
+    &lt;/a&gt;&lt;a href="" target="_blank"&gt;
+  &lt;img src="banner/5c33a332785bb.jpg"&gt;
+    &lt;/a&gt;&lt;a href="https://api.whatsapp.com/send?phone=918743913121&amp;amp;text=Hello,%20i%20am%20interested%20to%20purchase%20video%20course" target="_blank"&gt;
+  &lt;img src="banner/5e13707d13fe4.jpg"&gt;
+    &lt;/a&gt;&lt;a href="https://www.google.com/search?client=firefox-b-ab&amp;amp;q=testing+world#lrd=0x390ce45bd130c3e3:0x2cbebc3a19808103,1,,," target="_blank"&gt;
+  &lt;img src="banner/5c33a68c8a29f.jpg"&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+    
+    
+&lt;/div&gt;
+
+  &lt;footer&gt;
+	&lt;p&gt;Login &amp;amp; Sign Up &lt;/p&gt;
+
+&lt;/footer&gt; 
+
+&lt;style&gt;
+select[disabled]{
+  color:#aaa;
+}
+&lt;/style&gt;
+
+
+
+
+
+ &lt;link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"&gt;
+  &lt;script src="https://code.jquery.com/jquery-1.12.4.js"&gt;&lt;/script&gt;
+  &lt;script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  &lt;/script&gt;
+  
+  
+  &lt;script src="js/location.js"&gt;&lt;/script&gt;  
+  
+  
+  &lt;script&gt;
+  $(function() { //document ready
+    $(".displayPopup").on("click", function() { //click event of the button
+        $("#overlay").fadeTo(100, .3); //this will show the overlay awith a crossbrowser transparency
+        $("#popup1").show(); // show popup1
+        return false; //disable event propogation (avoid addition of "#" to url)
+    })
+ 
+    $(".popup .close").on("click", function() { //click event of the close button in popup
+        $("#overlay").hide(); //hide overlay
+        $(".popup").hide(); //hide popup
+        return false; //disable event propogation (avoid addition of "#" to url)
+    })
+})
+  &lt;/script&gt;
+  
+
+
+
+
+&lt;div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</msg>
+<arg>${PageHTML}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:55.422108" elapsed="0.000670"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:55.519094" level="INFO">${Attr} = field</msg>
+<var>${Attr}</var>
+<arg>name:fld_username</arg>
+<arg>class</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-12-11T15:23:55.423688" elapsed="0.095472"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:55.521090" level="INFO">field</msg>
+<arg>${Attr}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:55.520769" elapsed="0.000384"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:55.533846" level="INFO">${cnt} = 6</msg>
+<var>${cnt}</var>
+<arg>class:field</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-12-11T15:23:55.522448" elapsed="0.011471"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:55.535690" level="INFO">6</msg>
+<arg>${cnt}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:55.535469" elapsed="0.000271"/>
+</kw>
+<status status="PASS" start="2024-12-11T15:23:53.769898" elapsed="1.767097"/>
+</test>
+<status status="PASS" start="2024-12-11T15:23:53.766584" elapsed="1.772491"/>
+</suite>
+<suite id="s1-s10" name="TC010" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC010.robot">
+<test id="s1-s10-t1" name="TC_010 User Defined Keywords using Python Scripting" line="10">
+<kw name="Create Folder and Runtime" owner="Resources1">
+<kw name="Create Folder" owner="UserKeywords">
+<arg>${foldername}</arg>
+<status status="PASS" start="2024-12-11T15:23:55.545201" elapsed="0.000545"/>
+</kw>
+<kw name="Create Sub Folder" owner="UserKeywords">
+<msg time="2024-12-11T15:23:55.546684" level="FAIL">FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'C:\\RobotFrameworkTesting\\Testing'</msg>
+<arg>${subfoldername}</arg>
+<status status="FAIL" start="2024-12-11T15:23:55.546002" elapsed="0.012139">FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'C:\\RobotFrameworkTesting\\Testing'</status>
+</kw>
+<arg>RobotFRM</arg>
+<arg>Testing</arg>
+<status status="FAIL" start="2024-12-11T15:23:55.544972" elapsed="0.014790">FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'C:\\RobotFrameworkTesting\\Testing'</status>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" start="2024-12-11T15:23:55.560248" elapsed="0.000075"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-12-11T15:23:55.560855" elapsed="0.000177"/>
+</kw>
+<status status="FAIL" start="2024-12-11T15:23:55.544486" elapsed="0.017106">FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'C:\\RobotFrameworkTesting\\Testing'</status>
+</test>
+<status status="FAIL" start="2024-12-11T15:23:55.541239" elapsed="0.022522"/>
+</suite>
+<suite id="s1-s11" name="TC011" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC011.robot">
+<test id="s1-s11-t1" name="TC_011 User Defined Keywords with Argument and Return" line="10">
+<kw name="Concatenate Username and Password" owner="Resources1">
+<kw name="Concatenate Two Values" owner="UserKeywords">
+<msg time="2024-12-11T15:23:55.575520" level="INFO">${resultval} = Testing World</msg>
+<var>${resultval}</var>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-12-11T15:23:55.575213" elapsed="0.000352"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:55.576807" level="INFO">Testing World</msg>
+<arg>${resultval}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:55.576583" elapsed="0.000459"/>
+</kw>
+<arg>Testing</arg>
+<arg>World</arg>
+<status status="PASS" start="2024-12-11T15:23:55.574557" elapsed="0.003441"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-11T15:23:55.578744" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-11T15:23:55.578471" elapsed="1.684319"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-11T15:23:57.264315" elapsed="0.032860"/>
+</kw>
+<status status="PASS" start="2024-12-11T15:23:55.573779" elapsed="1.723850"/>
+</test>
+<status status="PASS" start="2024-12-11T15:23:55.565755" elapsed="1.734414"/>
+</suite>
+<suite id="s1-s12" name="TC012" source="C:\Users\niri\PycharmProjects\TestProject001\TestCases\TC012.robot">
+<test id="s1-s12-t1" name="TC_012 Case in BDD Format" line="10">
+<kw name="Given">
+<msg time="2024-12-11T15:23:57.308280" level="FAIL">No keyword with name 'Given' found.</msg>
+<arg>Start Browser and Maximize</arg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<status status="FAIL" start="2024-12-11T15:23:57.308173" elapsed="0.000181">No keyword with name 'Given' found.</status>
+</kw>
+<kw name="When">
+<arg>Create Folder and Runtime</arg>
+<arg>ABCD</arg>
+<arg>XYZM</arg>
+<status status="NOT RUN" start="2024-12-11T15:23:57.309644" elapsed="0.000105"/>
+</kw>
+<kw name="Then">
+<arg>Concatenate Username and Password</arg>
+<arg>Testing</arg>
+<arg>World</arg>
+<status status="NOT RUN" start="2024-12-11T15:23:57.310154" elapsed="0.000079"/>
+</kw>
+<status status="FAIL" start="2024-12-11T15:23:57.306545" elapsed="0.004178">No keyword with name 'Given' found.</status>
+</test>
+<status status="FAIL" start="2024-12-11T15:23:57.302664" elapsed="0.010539"/>
+</suite>
+<kw name="After Each Test Suite" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-11T15:23:57.315274" level="INFO">Test Suite Ended</msg>
+<arg>Test Suite Ended</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-11T15:23:57.315154" elapsed="0.000164"/>
+</kw>
+<status status="PASS" start="2024-12-11T15:23:57.314940" elapsed="0.001096"/>
+</kw>
+<status status="FAIL" start="2024-12-11T15:23:33.749881" elapsed="23.566306"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Sanity</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="10" fail="3" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC001">TestCases.TC001</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TC002">TestCases.TC002</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="TC003">TestCases.TC003</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="TC004">TestCases.TC004</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s5" name="TC005">TestCases.TC005</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s6" name="TC006">TestCases.TC006</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s7" name="TC007">TestCases.TC007</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s8" name="TC008">TestCases.TC008</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s9" name="TC009">TestCases.TC009</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s10" name="TC010">TestCases.TC010</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s11" name="TC011">TestCases.TC011</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s12" name="TC012">TestCases.TC012</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-12-11T15:23:41.281396" level="WARN">Error in file 'C:\Users\niri\PycharmProjects\TestProject001\Resources\Resources1.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
